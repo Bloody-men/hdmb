@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>排行榜</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<style type="text/css">
+.hdk-Player{position: relative;box-sizing: border-box;padding-left: 29%; margin-top: 5px;width:96%;background: #fff6f5;border-radius: 5px;display: inline-block;}
+	/*--ranking样式--*/
+body{max-width: 560px;margin:0 auto;text-align: center;background-image: linear-gradient(to top , #ff4839, #ff6c4b);}
+
+#select{width: 96%; margin: 0 auto;background-color: #fff; line-height: 40px; border-radius: 5px; border:1px solid #ccc; font-size: 14px; position: relative;}
+#select i{width: 0; height: 0; border-top: 8px solid #fd5760; border-left: 5px solid transparent; border-right: 5px solid transparent;position: absolute; top: 17px; right: 10px;}
+#select span{display:block; height: 40px; cursor: pointer;}
+#select ul{display: none;}
+#select li{line-height: 30px; color: #666; list-style-type: none; border-bottom: 1px dashed #eee;}
+.click_select_color{background:#fe5860;color:#fff !important;}
+.hdk-skin>p{width: 100%;font-size: 16px;line-height: 40px;color: #fff;margin-top: 30px;}
+.hdk-order{position: absolute;left: 2px;margin: 25px 1%;width: 25px;height: 25px;color: #fff;border-radius: 50%;background:#cccccc;}
+.hdk-order>p{line-height: 25px;}
+.hdk-chart{margin: 10px 1% ;width: 55px;height: 55px;position: absolute;top: 50%;margin-top: -26px;left: 10%;}
+.hdk-chart>img{width: 100%;height: 100%;border-radius: 50%;}
+.hdk-Player>h5{width: 40% ;text-align: -webkit-auto;white-space: nowrap;overflow: hidden;text-overflow: ellipsis; margin-left: 10px;font-size: 14px;float:left;display: inline-block;line-height: 70px;color: #000;}
+.hdk-Player>p{position: absolute;top: 50%;margin-top: -10px;right: 5px;font-size: 16px;display: inline-block;float:right;color: #f92e5b;font-weight: 600;}
+.hdk-Player>span{font-size: 14px;display: inline-block;line-height: 70px;float:right;color: #f92e5b;margin: 0px 3% 0px 1%;color: #4e4e4e;}
+.hdk-clicks{height: 36px;line-height: 36px;color: #fff;}
+.fullnames{max-width: 139px;height: 75px;display: table-cell;vertical-align: middle;text-align: left;}
+.fullname{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;width: 100%;word-wrap: break-word;font-size: 14px;font-weight: 700;color: #4e4e4e;}
+.hdk-Player>p>span{color: #4e4e4e;font-size: 14px;margin-left: 5px;}
+</style>
+<body>
+	<a name="gettop"></a>
+	<header class="index_header rule_header">
+		<div class="swiper-container-lun" style="padding-top: 0;">
+			<div class="head-move">
+				<marquee direction="left">为尽量保证活动公平，每位参赛宝宝礼物支持票数不能超过350票，超过部分票数不计入总票数！望悉知！</marquee>
+			</div>
+		    <div class="swiper-wrapper">
+		        <div class="player-slide swiper-slide"><img src="image/cs1.jpg"></div>
+		        <div class="player-slide swiper-slide"><img src="image/cs2.jpg"></div>
+		        <div class="player-slide swiper-slide"><img src="image/cs3.jpg"></div>
+		        <div class="player-slide swiper-slide"><img src="image/cs4.jpg"></div>
+		        <div class="player-slide swiper-slide"><img src="image/cs5.jpg"></div>
+		        <div class="player-slide swiper-slide"><img src="image/cs1.jpg"></div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		</div>
+	</header>
+	<div class="hdk-skin">
+		<p>- 排行榜 -</p>
+		<div id="select">
+			<i></i>
+			<span class="checkspan">全部分组</span>
+			<ul>
+				<li data="1" class="click_change_bgcolor" style=" border-top: 1px dashed #eee;">李易峰</li>
+				<li data="2" class="click_change_bgcolor">杨洋</li>
+				<li data="3" class="click_change_bgcolor">陈伟霆</li>
+				<li data="4" class="click_change_bgcolor">张若昀</li>
+				<li class="click_change_bgcolor">吴磊</li> 
+			</ul>
+		</div>
+		<div id="player_list">
+			<a href="player.html" class="hdk-Player">
+				<div class="hdk-order"style="background:none;" ><img style="width: 100%" src="img/first.png"></div>
+				<div class="hdk-chart"><img src="image/cs1.jpg"></div>
+				<div class="fullnames">
+					<div class="fullname">返回什么叫人身啥问题和热狗攻击我几乎无任何附属公司</div>
+				</div>
+				<p>12345<span>票</span></p>
+			</a>
+
+			<a href="player.html" class="hdk-Player">
+				<div class="hdk-order"style="background:none;" ><img style="width: 100%" src="img/Second.png"></div>
+				<div class="hdk-chart"><img src="image/cs2.jpg"></div>
+				<div class="fullnames">
+					<div class="fullname">问题尤为</div>
+				</div>
+				<p>12345<span>票</span></p>
+			</a>
+			<a href="player.html" class="hdk-Player">
+				<div class="hdk-order" style="background:none;"><img style="width: 100%" src="img/third.png"></div>
+				<div class="hdk-chart"><img src="image/cs3.jpg"></div>
+				<div class="fullnames">
+					<div class="fullname">我回头我让他和</div>
+				</div>
+				<p>12345<span>票</span></p>
+			</a>
+			<a href="player.html" class="hdk-Player">
+				<div class="hdk-order"><p>4</p></div>
+				<div class="hdk-chart"><img src="image/cs4.jpg"></div>
+				<div class="fullnames">
+					<div class="fullname">台海问题翰威特核问题会谈认为</div>
+				</div>
+				<p>12345<span>票</span></p>
+			</a>
+			<a href="player.html" class="hdk-Player">
+				<div class="hdk-order"><p>5</p></div>
+				<div class="hdk-chart"><img src="image/cs5.jpg"></div>
+				<div class="fullnames">
+					<div class="fullname">为台湾</div>
+				</div>
+				<p>12345<span>票</span></p>
+			</a>
+		</div>
+		<div class="hdk-clicks" id="loaduser"><a>查看更多...</a></div>
+		<div class="hdk-lower-skin">
+			<div class="hdk-lower">
+				<a href="index.html">
+					<div class="hdk-menu">
+						<img src="img/home-page.png">
+						<p>首页</p>
+					</div>
+				</a>
+				<a href="rule.html">
+					<div class="hdk-menu">
+						<img src="img/rule.png">
+						<p>规则</p>
+					</div>
+				</a>
+				<a href="join.html">
+					<div class="hdk-menu">
+						<img src="img/sign-up.png">
+						<p>报名</p>
+					</div>
+				</a>
+				<a href="ranking.html">
+					<div class="hdk-menu">
+						<img src="img/Ranking-List.png">
+						<p>排行榜</p>
+					</div>
+				</a>
+				<a href="ranking.html">
+					<div class="hdk-menu">
+						<img src="img/link.png">
+						<p>自定义</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="hdk-copyright">
+			<a class="color border_color" style="border:1px solid #fff;color: #fff;" href="//vote.hudongku.cn">技术支持：互动酷</a>
+		</div>
+		<div class="hdk-empty"></div>	
+	</div>	
+	</div>
+	<div class="hdk-Return-skin">
+		<div class="hdk-Return">
+			<div class="hdk-within">       
+        		<a href="#gettop" class="gettop"><img  src="img/top.png"></a>
+        	</div>	
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+	var swiper = new Swiper('.swiper-container-lun', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,  //分页可单击
+        spaceBetween: 50,
+        centeredSlides: true,
+        autoplay: 2500,  //自动播放
+        autoplayDisableOnInteraction: false  //自动播放禁用交互
+    });
+	$(function(){
+      $(".checkspan").bind("click",function(){
+        var ul = $(this).siblings('ul')
+        if(ul.is(":hidden")){
+          ul.slideDown('400', function() {
+            $(this).find("li").bind("click",function(){
+              var selectLi=$(this).text();
+              $("#select span").text(selectLi);
+              $("#select ul").slideUp(400);
+              $(this).addClass("click_select_color");
+              $(".click_change_bgcolor").not($(this)).removeClass("click_select_color");
+              var data = $(this).attr("data");
+                $("#player_list").html('<a href="player.html"class="hdk-Player"><div class="hdk-order"style="background-color:#ff3600"><p>1</p></div><div class="hdk-chart"><img src="img/222.jpg"></div><div class="fullnames"><div class="fullname">返回什么叫人身啥问题和热狗攻击我几乎无任何附属公司</div></div><p>12345<span>票</span></p></a><a href="player.html"class="hdk-Player"><div class="hdk-order"style="background-color:#fe8a00"><p>1</p></div><div class="hdk-chart"><img src="img/222.jpg"></div><div class="fullnames"><div class="fullname">问题尤为</div></div><p>12345<span>票</span></p></a><a href="player.html"class="hdk-Player"><div class="hdk-order"style="background-color:#ffd800 "><p>1</p></div><div class="hdk-chart"><img src="img/222.jpg"></div><div class="fullnames"><div class="fullname">我回头我让他和</div></div><p>12345<span>票</span></p></a><a href="player.html"class="hdk-Player"><div class="hdk-order"><p>1</p></div><div class="hdk-chart"><img src="img/222.jpg"></div><div class="fullnames"><div class="fullname">台海问题翰威特核问题会谈认为</div></div><p>12345<span>票</span></p></a>');
+            })
+          });
+        }else{
+            $(this).siblings('ul').slideUp(400);
+            
+        } 
+      })
+    })
+</script>
+<script>
+    var pid = "**********";
+    var page = 1;
+	var gid = "41";
+    $(function () {
+        $('#user-list').empty();
+        $('#loaduser').click(function () {
+            if ($(this).hasClass('layui-btn-disabled')) {
+                return;
+            }
+            $("#loaduser").addClass('layui-btn-disabled');
+            $('#loaduser').text('加载中...');
+
+            var url = U('toupiao/ajax/gvu');
+            page = page + 1;
+            $.post(url, {page: page, gid:gid}, function (data) {
+                if (data.flag == 100) {
+                    $('.user-list').append(data.html);
+                    $("#loaduser").removeClass('layui-btn-disabled');
+                    $('#loaduser').text('加载更多');
+                } else {
+                    $('.user-list').append(data.html);
+                    $('#loaduser').text('没有更多了~');
+                }
+            }, 'json')
+        })
+    })
+    layui.use(['form'], function () {
+      var form = layui.form();
+      form.on('select(groupNav)', function (obj) {
+        var url = "后台" + obj.value;
+        location.href= url;
+      })
+    })
+</script>
+<script type="text/javascript">
+	$(function() {
+    $(window).scroll(function() {
+        var t = $(this).scrollTop();
+        if (t > 300) {
+            $(".gettop").stop().fadeIn(300);
+        } else {
+            $(".gettop").stop().fadeOut(300);
+        }
+    });
+    $(".gettop").click(function() {
+        $("body,html").stop().animate({
+            scrollTop: 0
+        }, 300);
+    });
+});
+</script>
+</html>
+ 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>选手页面</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="css/music.css" />
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body style="position: relative;">
+	<a name="gettop"></a>
+	<header class="player_header">
+		<div class="swiper-container player-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide player-slide"><img src="image/cs1.jpg"></div>
+	            <div class="swiper-slide player-slide"><img src="image/cs2.jpg"></div>
+	            <div class="swiper-slide player-slide"><img src="image/b.png"></div>
+	            <div class="swiper-slide player-slide"><img src="image/cs4.jpg"></div>
+	            <div class="swiper-slide player-slide"><img src="image/c.jpg"></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <a href="rule.html"><div class="click_explain">活动说明</div></a>
+	        <a class="click_return" href="index.html"><img style="width: 60%" src="img/left.png"></a>
+	    </div>	
+	</header>
+	<mian class="player_mian">
+		<div class="keyword player_keyword">
+	    	<li>
+	    		<p>10</p>
+	    		<span>票数</span>
+	    	</li>
+	    	<li>
+	    		<p>132</p>
+	    		<span>支持</span>
+	    	</li>
+	    	<li>
+	    		<p>1238111</p>
+	    		<span>浏览数</span>
+	    	</li>
+	    	<li>
+	    		<p>1238111</p>
+	    		<span>分享数</span>
+	    	</li>
+	    </div>
+		<div class="mian_player">
+			<p>1号 张三</p>
+			<div class="text">	
+				全球最大的中文搜索引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关的搜索结.引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关
+			</div>
+		</div>
+		<div class="player_music">
+		  <audio preload="auto" controls>
+		    <source src="http://www.ytmp3.cn/down/58405.mp3" />
+		    <source src="audio.ogg" />
+		    <source src="audio.wav" />
+		  </audio>
+		</div>
+		<div class="player_music">
+			<video controls="controls" preload="auto" poster="img/video-picture.png" width="100%" style="border-radius: 5px;">
+				<source src="https://tz-1256716648.cos.ap-chengdu.myqcloud.com/%E8%B6%85%E8%90%8C%E5%B0%8F%E6%AD%A3%E5%A4%AA%EF%BC%9A%E8%BE%BD%E5%AE%818%E5%B2%81%E5%AD%99%E5%98%89%E5%A3%95.mp4">
+			</video>
+			<div class="player_img">
+				<img src="image/c.jpg" style="width: 100%">
+			</div>
+		</div>
+			<div class="hdk-copyright">
+				<a class="color border_color" href="//vote.hudongku.cn">技术支持：互动酷</a>
+			</div>
+	</mian>
+		<div class="hdk-lower-skin">
+			<a href="#gettop" class="gettop"><img  src="img/top.png"></a>
+			<ul class="player_font">
+				<li style="border-right: 1px solid #fff;"><img src="img/support.png">给TA投票</li>
+				<li style="border-right: 1px solid #fff;"><img src="img/love.png">支持TA</li>
+				<li><img src="img/enroll.png">我要报名</li>
+			</ul>
+		</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/audioplayer.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script>
+	$( function() 
+	{
+		$( 'audio' ).audioPlayer();	
+	});
+
+</script>
+<script>
+		var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        mousewheelControl: true,
+        autoplay: 2500
+    });
+	
+</script>
+</html>
