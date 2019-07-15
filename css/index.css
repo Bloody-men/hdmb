@@ -276,17 +276,17 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */color: #ffa198;}
 	/*选手页面  player.html*/
 .gettop {
 	display: none;
-	position: fixed;
+    position: fixed;
     bottom: 60px;
     right: 5px;
     background: #fff;
     border-radius: 50%;
     border: 1px solid #ccc;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
     height: 30px;
     width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .gettop> img {
 	width: 70%;
