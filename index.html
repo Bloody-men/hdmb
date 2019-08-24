@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<style type="text/css">
+
+		input::-webkit-input-placeholder {
+	    color: #fff;
+	  }
+/*瀑布流布局*/
+.slide>img{width: 100%;}
+.wrap {
+	position:relative;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+.gard {
+	width:46%;
+	background-color:brown;
+	margin:2%;
+	position:absolute;
+}
+.wf_slide{border-radius: 5px;}
+.wf_slide img{border-radius: 5px;}
+
+
+
+
+	</style>
+</head>
+<body>
+	<header class="index_header">
+		<div class="swiper-container-lun">
+			<div class="head-move">
+				<marquee direction="left">为尽量保证活动公平，每位参赛宝宝礼物支持票数不能超过350票，超过部分票数不计入总票数！望悉知！</marquee>
+			</div>
+		    <div class="swiper-wrapper">
+		        <div class=" swiper-slide"><img src="http://file.hdk.oneinall.cn/default-file/banner/currency/2.jpg"></div>
+		        <div class=" swiper-slide"><img src="http://file.hdk.oneinall.cn/default-file/banner/currency/1.jpg"></div>
+		    </div>
+		    <div class="top_qr" onclick="_show('qr')"><img src="img/bar.png" style="width: 100%"></div>
+		    <div class="qr">
+				<div class="qrcode">
+					<img style="width: 90%;padding:5%;" src="image/qrcode.png">
+					<p>扫码参与</p>
+				</div>
+				<div class="disappear" onclick="_hide('qr')">×</div>
+			</div>
+		    <div id="audio-btn" class="on">
+				<div class="rotate"></div>
+				<audio src="http://img.hitoupiao.cn/20190221/2019022109372574574.mp3" autoplay="" loop="" preload="" id="music"></audio>
+			</div>
+		    <div class="swiper-pagination"></div>
+		</div>
+	    <div class="searchinput">
+	    	<input type="text" name="搜索框" placeholder="搜索选项名称和编号">
+	    	<div class="search">	
+	    		<img src="img/search.png" style="width: 24px;vertical-align: middle;filter: invert(100%) grayscale(100%) brightness(1000%);">
+	    	</div>
+	    </div>
+	    <div class="keyword">
+	    	<li>
+	    		<p>12</p>
+	    		<span>参与数</span>
+	    	</li>
+	    	<li>
+	    		<p>132</p>
+	    		<span>投票数</span>
+	    	</li>
+	    	<li>
+	    		<p>12381</p>
+	    		<span>浏览数</span>
+	    	</li>
+	    </div>
+	    <div class="columns">
+	    	<div class="columns_text">
+	    		<p>活动倒计时</p>
+	    		<a href="rule.html">活动说明></a>
+	    	</div>
+	    	<p>365天 18时 50分 43秒</p>
+	    	<div class="columns_click">我要报名</div>
+	    </div>
+	</header>
+	<!-- 滑动布局 -->
+	<!-- <main class="index_main">
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <a href="player.html" class="swiper-slide">
+			        <div class="slide">
+			        	<img src="image/a.jpg">
+			        	<p>1号</p>
+			        	<p>张三力士对你的弟到如果给我个</p>
+			        	<p>39216票</p>
+			        	<span>投票</span>
+			        </div>
+		        </a>
+		        <a href="player.html" class="swiper-slide">
+			        <div class="slide">
+			        	<img src="image/c.jpg">
+			        	<p>2号</p>
+			        	<p>张三</p>
+			        	<p>396票</p>
+			        	<span>投票</span>
+			        </div>
+			    </a>
+			    <a href="player.html" class="swiper-slide">
+			        <div class="slide">
+			        	<img src="image/c.jpg">
+			        	<p>3号</p>
+			        	<p>张三</p>
+			        	<p>396票</p>
+			        	<span>投票</span>
+			        </div>
+		        </a>
+		        <a href="player.html" class="swiper-slide">
+			        <div class="slide">
+			        	<img src="image/a.jpg">
+			        	<p>4号</p>
+			        	<p>张三</p>
+			        	<p>396票</p>
+			        	<span>投票</span>
+			        </div>
+		        </a>
+		        <a href="player.html" class="swiper-slide">
+			        <div class="slide">
+			        	<img src="image/qrcode.png">
+			        	<p>5号</p>
+			        	<p>张三</p>
+			        	<p>396票</p>
+			        	<span>投票</span>
+			        </div>
+		        </a>
+		        
+		    </div>
+		    <div class="swiper-scrollbar"></div>
+		</div>
+	</main> -->
+	<!-- 瀑布流布局 -->
+	<main class="index_main wrap" style="margin:100px auto 24px;">
+		<a href="player.html" class="swiper-slide gard">
+	        <div class="slide wf_slide">
+	        	<img src="image/a.jpg">
+	        	<p>1号</p>
+	        	<p>张三力士对你的弟到如果给我个</p>
+	        	<p>39216票</p>
+	        	<span>投票</span>
+	        </div>
+        </a>
+        <a href="player.html" class="swiper-slide gard">
+	        <div class="slide wf_slide">
+	        	<img src="image/c.jpg">
+	        	<p>2号</p>
+	        	<p>张三</p>
+	        	<p>396票</p>
+	        	<span>投票</span>
+	        </div>
+	    </a>
+	    <a href="player.html" class="swiper-slide gard">
+	        <div class="slide wf_slide">
+	        	<img src="image/c.jpg">
+	        	<p>3号</p>
+	        	<p>张三</p>
+	        	<p>396票</p>
+	        	<span>投票</span>
+	        </div>
+        </a>
+        <a href="player.html" class="swiper-slide gard">
+	        <div class="slide wf_slide">
+	        	<img src="image/a.jpg">
+	        	<p>4号</p>
+	        	<p>张三</p>
+	        	<p>396票</p>
+	        	<span>投票</span>
+	        </div>
+        </a>
+        <a href="player.html" class="swiper-slide gard">
+	        <div class="slide wf_slide">
+	        	<img src="image/qrcode.png">
+	        	<p>5号</p>
+	        	<p>张三</p>
+	        	<p>396票</p>
+	        	<span>投票</span>
+	        </div>
+        </a>
+        <a href="player.html" class="swiper-slide gard">
+	        <div class="slide wf_slide">
+	        	<img src="image/c.jpg">
+	        	<p>3号</p>
+	        	<p>张三</p>
+	        	<p>396票</p>
+	        	<span>投票</span>
+	        </div>
+        </a>
+        <a href="player.html" class="swiper-slide gard">
+	        <div class="slide wf_slide">
+	        	<img src="image/a.jpg">
+	        	<p>4号</p>
+	        	<p>张三</p>
+	        	<p>396票</p>
+	        	<span>投票</span>
+	        </div>
+        </a>
+        <a href="player.html" class="swiper-slide gard">
+	        <div class="slide wf_slide">
+	        	<img src="image/qrcode.png">
+	        	<p>5号</p>
+	        	<p>张三</p>
+	        	<p>396票</p>
+	        	<span>投票</span>
+	        </div>
+        </a>
+	</main>
+	<!-- 技术支持 -->
+    <div class="hdk-copyright">
+		<a class="color border_color" href="//vote.hudongku.cn">技术支持：互动酷</a>
+	</div>
+	
+	<font>
+		<a href="#" class="report">反馈</a>
+		<div class="hdk-lower-skin">
+			<div class="hdk-lower">
+				<a href="index.html">
+					<div class="hdk-menu">
+						<img src="img/home-page.png">
+						<p>首页</p>
+					</div>
+				</a>
+				<a href="rule.html">
+					<div class="hdk-menu">
+						<img src="img/rule.png">
+						<p>规则</p>
+					</div>
+				</a>
+				<a href="join.html">
+					<div class="hdk-menu">
+						<img src="img/sign-up.png">
+						<p>报名</p>
+					</div>
+				</a>
+				<a href="ranking.html">
+					<div class="hdk-menu">
+						<img src="img/Ranking-List.png">
+						<p>排行榜</p>
+					</div>
+				</a>
+				<a href="ranking.html">
+					<div class="hdk-menu">
+						<img src="img/link.png">
+						<p>自定义</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</font>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+    <script>
+    	var swiper = new Swiper('.swiper-container-lun', {
+	        pagination: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        paginationClickable: true,  //分页可单击
+	        spaceBetween: 50,
+	        centeredSlides: true,
+	        autoplay: 2500,  //自动播放
+	        autoplayDisableOnInteraction: false  //自动播放禁用交互
+	    });
+    		var swiper = new Swiper('.swiper-container', {
+	        scrollbar: '.swiper-scrollbar',
+	        scrollbarHide: true,  //滚动条隐藏
+	        slidesPerView: 'auto',  //幻灯片浏览
+	        centeredSlides: true,  //中心幻灯片
+	        spaceBetween: 30,//间距
+	        grabCursor: true  //抓取光标
+	    });
+    </script>
+<script type="text/javascript">
+	 $(function () {
+        let wrap=$('.wrap');
+        let item=$('.gard');
+        let gutter=0;
+        let wrapwidth=wrap[0].getBoundingClientRect().width;
+        let itemwidth=item[0].getBoundingClientRect().width+gutter;
+        let cols=Math.max(Math.floor(wrapwidth/itemwidth),1);
+         wrap.css('width',cols*(itemwidth+gutter));
+        let arr1=[],arr2=[];
+        for(g=0;g<cols;g++)
+        {
+            arr1.push((itemwidth)*g+gutter);
+            arr2.push(gutter);
+        }
+        item.each(function (i) {
+            let itemIndex = arr2.slice(0).sort(function (a, b) {
+                return a - b;
+            }).shift();
+            let index=arr2.indexOf(itemIndex);
+            var posX = arr1[index];
+            var posY = arr2[index];
+           $(this).animate({'left':posX,'top':posY},'0.5s');
+           console.log(posX+','+posY);
+           arr2[index] += this.getBoundingClientRect().height + 10;
+           console.log( arr2[index]);
+            var containerHeight =arr2.slice(0).sort(function (a, b) {
+                return a - b;
+            }).pop();
+            wrap[0].style.height = containerHeight + 'px';
+        })
+    })
+</script>
+
+</body>
+</html> 
