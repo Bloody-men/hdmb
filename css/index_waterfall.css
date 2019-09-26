@@ -1,0 +1,8 @@
+.slide{box-sizing:border-box;height: 100%;background: #fff6f5;}
+
+#box{box-sizing: border-box;position: relative;max-width: 500px;width: 90%; margin: 10px auto;}
+.item img {width: 100%;display: block;}
+.item {width: 48.5%;position: absolute;}
+
+/*把姓名放在图片中.slide>b*/
+/*.slide>b{position: absolute;bottom: 107px;left: 0;background-color: rgba(0, 0, 0, 0.4);display: inline-block;width: 96%;font-size: 14px;color: #fff;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;padding: 0 2%;line-height: 24px;}*/
